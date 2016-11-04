@@ -1,0 +1,43 @@
+#+TITLE: Lambda Expression
+
+* Basic
+
+** *Two way*
+
+1. =[] () {}=
+2. =[] ()->ReturnType {}=
+
+*In C++14, Parameter can use type with* =auto= *keyword.*
+
+* Example
+
+** C++11
+#+BEGIN_SRC c++ -n -t -w 80
+#include <iostream>
+
+int main(void)
+{
+    auto adder = [] (int a, int b)->int { return a + b; };
+    auto add   = [] (int a, int b) { return a + b; };
+
+    std::cout << "6+4=" << adder(6,4) << std::endl;
+    std::cout << "2+3=" << add(2,3)   << std::endl;
+
+    return 0;
+}
+#+END_SRC
+
+** C++14
+#+BEGIN_SRC c++ -n -t -w 80
+#include <iostream>
+
+int main(void)
+{
+    auto adder = [] (auto a, auto b) { return a + b; };
+
+    std::cout << "6+4=" << adder(6,4) << std::endl;
+    std::cout << "5.5+4.5=" << adder(5.5, 4.5) << std::endl;
+
+    return 0;
+}
+#+END_SRC
