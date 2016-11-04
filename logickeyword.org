@@ -1,0 +1,63 @@
+#+TITLE: Logic Keyword
+
+* *And*
+*Like symbol* =&&=, *From Cpp11 has new keyword ->* =and=
+
+=Example=:
+
+#+BEGIN_SRC cpp
+#include <iostream>
+
+int main(void)
+{
+    double x(3.03);
+
+    if ((x > 3.00) and (x < 3.05)) {
+	std::cout << "This is and statement." << std::endl;
+    }
+
+    return 0;
+}
+#+END_SRC
+
+* *Or*
+
+*Like symbol* =||= , *From Cpp11 has new keyword ->* =or=
+
+=Example=:
+
+#+BEGIN_SRC cpp
+#include <iostream>
+
+int main(void)
+{
+    double y(5.03);
+
+    if ((y > 3.00) or (y < 3.05)) {
+	std::cout << "This is or statement." << std::endl;
+    }
+
+    std::cout << "Nothing." << std::endl;
+
+    return 0;
+}
+#+END_SRC
+
+* *Not*
+
+*Like symbol* =!=, *From Cpp11 has new keyword ->* =not=
+
+=Example=:
+
+#+BEGIN_SRC cpp
+#include <iostream>
+
+int main(void)
+{
+    double z(7.05);
+
+    if (not (z == 7)) {
+        std::cout << "This is not statement" << std::endl;
+    }
+}
+#+END_SRC
