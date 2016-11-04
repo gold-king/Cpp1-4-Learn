@@ -4,7 +4,7 @@
 
 ** In *Python* way:
 
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC python
 def say(name='Lamfunction'):
     print("Hi, %s" % name)  # For Python3.x
     pint "Hi, %s\n" % name  # For Python2.x
@@ -13,7 +13,7 @@ def say(name='Lamfunction'):
 say()            # Result: Hi, Lamfunction
 say("Kim")       # Result: Hi, Kim
 say("Carry")     # Result: Hi, Carry
-#+END_EXAMPLE
+#+END_SRC
 
 ** *C++11* way:
 
