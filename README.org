@@ -1,0 +1,11 @@
+#+TITLE: *Cpp1-4-Learn*
+-----
+
+* Intro
+*This repo to learn new* =Feature= *of* =C++11= and =C++14= *. Maybe to* =C++1x= *.*
+
+** Contains has:
+- *Variable*
+- *Lambda*
+- *Function*
+- *To be continued*
