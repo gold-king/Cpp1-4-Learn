@@ -1,0 +1,30 @@
+#+TITLE: Function
+
+* Default Parameter
+
+** In *Python* way:
+
+#+BEGIN_EXAMPLE
+def say(name='Lamfunction'):
+    print("Hi, %s" % name)  # For Python3.x
+    pint "Hi, %s\n" % name  # For Python2.x
+
+# call
+say()            # Result: Hi, Lamfunction
+say("Kim")       # Result: Hi, Kim
+say("Carry")     # Result: Hi, Carry
+#+END_EXAMPLE
+
+** *C++11* way:
+
+#+BEGIN_SRC cpp
+void say(std::string name="Lamfunction")
+{
+    std::cout << "Hi, " << name << std::endl;
+}
+
+// call
+say();
+say("Kim");
+say("Carry");
+#+END_SRC
