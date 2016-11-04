@@ -1,0 +1,55 @@
+#+TITLE: Variable
+
+* Basic
+** *Type VariableName(VariableValue)*
+
+#+BEGIN_EXAMPLE
+int    a(5);
+double b(5.0);
+#+END_EXAMPLE
+
+** *Type VariableName(VariableValue[SPEC])*
+
+#+BEGIN_EXAMPLE
+double h(5.5e3);
+double f(5.e3);
+double g(5.e-3);
+#+END_EXAMPLE
+
+** *Type Convert*
+
+#+BEGIN_EXAMPLE
+int    a(5), b(2);
+double c(a / b);
+#+END_EXAMPLE
+
+
+* Example
+
+#+BEGIN_SRC c++ -n -w 80
+#include <iostream>
+
+int main(void)
+{
+    int    a(5);
+    double b(3.0);
+    int    c(3e4);
+    double d(7.);
+    double e(3.5e3);
+    double f(5.e-3);
+
+    int note1(4), note2(5);
+    double note(note1 + note2);
+
+    std::cout << "a = " << a << std::endl;
+    std::cout << "b = " << b << std::endl;
+    std::cout << "c = " << c << std::endl;
+    std::cout << "d = " << d << std::endl;
+    std::cout << "e = " << e << std::endl;
+    std::cout << "f = " << f << std::endl;
+
+    std::cout << "note/2 = " << note/2 << std::endl;
+
+    return 0;
+}
+#+END_SRC
